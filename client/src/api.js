@@ -1,5 +1,4 @@
 // api.js
-// Все запросы к серверу через VITE_API_URL
 
 export async function registerUser(name, email, password) {
   try {
