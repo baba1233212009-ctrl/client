@@ -1,4 +1,5 @@
 // api.js
+// Все запросы к серверу через VITE_API_URL
 
 export async function registerUser(name, email, password) {
   try {
@@ -46,7 +47,7 @@ export async function getCurrentUser() {
 
     const res = await fetch(`${import.meta.env.VITE_API_URL}/api/users/me`, {
       method: "GET",
-      headers: { 
+      headers: {
         "Content-Type": "application/json",
         "Authorization": Bearer ${token}
       }
